@@ -55,7 +55,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 20px;backdrop-
 .nav-w{max-width:var(--mw);margin:0 auto;display:flex;align-items:center;justify-content:space-between}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--ff);font-weight:700;font-size:1rem;color:var(--blue);text-transform:uppercase;letter-spacing:.02em}
 .logo img{height:42px;width:auto}
-.logo-text{display:none}
+.nav-title{display:none}
 .nav-l{display:flex;gap:28px;list-style:none}
 .nav-l a{font-size:.875rem;color:var(--mt);transition:var(--t);font-weight:500}
 .nav-l a:hover{color:var(--blue)}
@@ -271,6 +271,7 @@ footer p{font-size:.8rem;color:var(--mt)}
   nav{padding:8px 12px}
   .logo{font-size:.85rem}
   .logo img{height:34px}
+  .nav-title{display:block;flex:1;text-align:center;font-family:var(--ff);font-weight:700;font-size:.7rem;color:var(--orange);text-transform:uppercase;letter-spacing:.08em;line-height:1.2;padding:0 8px}
   .burger{padding:6px}
 
   /* Hero */
@@ -387,8 +388,8 @@ footer p{font-size:.8rem;color:var(--mt)}
 <div class="nav-w">
   <a href="#" class="logo">
     <img src="pervaya_shkola_tennisa_logo_1600x1600.png" alt="Первая Школа Тенниса">
-    <span class="logo-text">Первая Школа Тенниса</span>
   </a>
+  <div class="nav-title">Франшиза школы тенниса</div>
   <ul class="nav-l">
     <li><a href="#about">Обо мне</a></li>
     <li><a href="#problems">Что я решаю</a></li>
