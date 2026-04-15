@@ -56,6 +56,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 20px;backdrop-
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--ff);font-weight:700;font-size:1rem;color:var(--blue);text-transform:uppercase;letter-spacing:.02em}
 .logo img{height:42px;width:auto}
 .nav-title{display:none}
+.nav-title-main{display:block}
+.nav-title-sub{display:block}
 .nav-l{display:flex;gap:28px;list-style:none}
 .nav-l a{font-size:.875rem;color:var(--mt);transition:var(--t);font-weight:500}
 .nav-l a:hover{color:var(--blue)}
@@ -268,11 +270,14 @@ footer p{font-size:.8rem;color:var(--mt)}
   :root{--sp:44px;--rl:14px;--r:10px}
 
   /* Nav */
-  nav{padding:8px 12px}
-  .logo{font-size:.85rem}
-  .logo img{height:46px}
-  .nav-title{display:block;flex:1;text-align:center;font-family:var(--ff);font-weight:700;font-size:.9rem;color:var(--orange);text-transform:uppercase;letter-spacing:.1em;line-height:1.2;padding:0 8px}
-  .burger{padding:6px}
+  nav{padding:10px 14px;background:#fff;backdrop-filter:none}
+  .logo{gap:10px}
+  .logo img{height:50px}
+  .nav-title{display:flex;flex-direction:column}
+  .nav-title-main{font-family:var(--ff);font-weight:700;font-size:1.1rem;color:var(--blue);line-height:1.2;text-transform:none;letter-spacing:0}
+  .nav-title-sub{font-family:var(--ff);font-weight:700;font-size:.65rem;color:var(--mt);text-transform:uppercase;letter-spacing:.08em;line-height:1.3}
+  .burger{padding:8px}
+  .burger span{width:26px;height:2.5px;background:var(--tx)}
 
   /* Hero */
   .hero{min-height:auto;padding-top:52px;padding-bottom:36px}
@@ -388,8 +393,8 @@ footer p{font-size:.8rem;color:var(--mt)}
 <div class="nav-w">
   <a href="#" class="logo">
     <img src="pervaya_shkola_tennisa_logo_1600x1600.png" alt="Первая Школа Тенниса">
+    <div class="nav-title"><span class="nav-title-main">Первая Школа Тенниса</span><span class="nav-title-sub">портфолио основателя франшизы</span></div>
   </a>
-  <div class="nav-title">Франшиза школы тенниса</div>
   <ul class="nav-l">
     <li><a href="#about">Обо мне</a></li>
     <li><a href="#problems">Что я решаю</a></li>
